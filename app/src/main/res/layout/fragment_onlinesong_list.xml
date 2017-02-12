@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_song_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:paddingBottom="57dp"/>
+
+    <include
+        android:id="@+id/ll_loding_onlinesong"
+        layout="@layout/include_loading"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/ll_load_fail_onlinesong"
+        layout="@layout/include_load_fail"
+        android:visibility="gone"/>
+</FrameLayout>
